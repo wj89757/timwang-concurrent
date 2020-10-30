@@ -11,7 +11,7 @@ public class OOMTaskClass {
     public static void main(String[] args) throws Exception {
         ExecutorService exec = Executors.newCachedThreadPool();
         int i = 0;
-        while (true) { 
+        while (true) {
             exec.submit(new Task(i++));
         }
     }
